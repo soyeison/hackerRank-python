@@ -1,14 +1,10 @@
-def factorial(n):
-    if n == 0 or n == 1:
-        resultado = 1
-    elif n > 1:
-        resultado = n * factorial(n - 1)
-    return resultado
-
 def calculo(x, y, z, n):
-    nFormula = x + y + z
-    result = factorial(nFormula) / (factorial(x) * factorial(y) * factorial(z))
-    listNumber = [x for x in range(nFormula)]
+    listX = [number for number in range(x + 1)]
+    listY = [number for number in range(y + 1)]
+    listZ = [number for number in range(z + 1)]
+
+    result = [[x, y, z] for x in listX for y in listY for z in listZ if x + y + z != n]
+    print(result)
 
 
 if __name__ == '__main__':
