@@ -13,5 +13,3 @@ if __name__ == '__main__':
     z = int(input())
     n = int(input())
     calculo(x, y, z, n)
-
-# Falata terminar
