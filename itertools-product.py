@@ -10,7 +10,6 @@ if __name__ == '__main__':
     
     # Usar la herramienta itertool
     listResp = list(product(elementsANumber, elementsBNumber))
-    print(listResp)
 
     # Iterar para imprimir la respuesta
     respString = ''
