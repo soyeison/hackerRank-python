@@ -1,8 +1,10 @@
-from math import sqrt
-
+import math
 if __name__ == '__main__':
-    ab = int(input())
-    bc = int(input())
 
-    ac = sqrt(ab**2 * bc**2)
-    print(ac)
+    AB = int(input())
+    BC = int(input())
+
+    h = math.sqrt(AB**2 + BC**2)
+
+    theta = math.acos(BC/h)
+    print(round(math.degrees(theta)), chr(176), sep="")
